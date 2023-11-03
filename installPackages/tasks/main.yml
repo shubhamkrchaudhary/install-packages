@@ -1,0 +1,6 @@
+---
+# tasks file for installPackages
+- name: Install packages
+  package:
+    name: "{{item}}"
+  loop: "{{packages}}"
